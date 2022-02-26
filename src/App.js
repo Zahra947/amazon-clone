@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-
+import Header from "./Header";
 export default function App() {
   return (
     <Router>
