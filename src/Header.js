@@ -47,9 +47,9 @@ export default function Header() {
                 <a class="nav-link disabled">Disabled</a>
               </li>
             </ul>
-            <form class="d-flex">
+            <form class="d-flex header__search">
               <input
-                class="header__searchInput form-control me-2"
+                class="header__searchInput"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
