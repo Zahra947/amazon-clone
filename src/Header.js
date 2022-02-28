@@ -5,60 +5,18 @@ import SearchIcon from "@material-ui/icons/Search";
 
 export default function Header() {
   return (
-    <div>
-      <nav class="navbar navbar-expand-lg header">
-        <div class="container-fluid">
-          <Link to="/" class="navbar-brand" href="/">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReAWZgVmr7NL6do8sjOxdWw7mzLVNrUI5BpqW-HKGXCACxX38WJ5RsmxZN5B4114vR3g&usqp=CAU"
-              alt="amazon-logo"
-              className="img-fluid header__logo"
-            />
-          </Link>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
-                  Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Features
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Pricing
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex header__search">
-              <input
-                class="header__searchInput"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              ></input>
-              <SearchIcon className="header__searchIcon" />
-            </form>
-          </div>
-        </div>
-      </nav>
-    </div>
+    <nav className=" header">
+      <Link to="/" href="/">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReAWZgVmr7NL6do8sjOxdWw7mzLVNrUI5BpqW-HKGXCACxX38WJ5RsmxZN5B4114vR3g&usqp=CAU"
+          alt="amazon-logo"
+          className="header__logo"
+        />
+      </Link>
+      <div className="header__search">
+        <input className="header__searchInput" type="search"></input>
+        <SearchIcon className="header__searchIcon" />
+      </div>
+    </nav>
   );
 }
