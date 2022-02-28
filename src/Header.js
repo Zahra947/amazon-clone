@@ -54,9 +54,7 @@ export default function Header() {
                 placeholder="Search"
                 aria-label="Search"
               ></input>
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
+              <SearchIcon className="header__searchIcon" />
             </form>
           </div>
         </div>
