@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./styles/Header.css";
+import SearchIcon from "@material-ui/icons/Search";
 
 export default function Header() {
   return (
