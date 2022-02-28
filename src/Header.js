@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./styles/Header.css";
 
 export default function Header() {
@@ -6,13 +7,13 @@ export default function Header() {
     <div>
       <nav class="navbar navbar-expand-lg header">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/">
+          <Link to="/" class="navbar-brand" href="/">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReAWZgVmr7NL6do8sjOxdWw7mzLVNrUI5BpqW-HKGXCACxX38WJ5RsmxZN5B4114vR3g&usqp=CAU"
               alt="amazon-logo"
               className="img-fluid header__logo"
             />
-          </a>
+          </Link>
           <button
             class="navbar-toggler"
             type="button"
