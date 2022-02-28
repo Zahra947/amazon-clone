@@ -1,12 +1,17 @@
 import React from "react";
+import "./styles/Header.css";
 
 export default function Header() {
   return (
     <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg header">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            Navbar
+          <a class="navbar-brand" href="/">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReAWZgVmr7NL6do8sjOxdWw7mzLVNrUI5BpqW-HKGXCACxX38WJ5RsmxZN5B4114vR3g&usqp=CAU"
+              alt="amazon-logo"
+              className="img-fluid header__logo"
+            />
           </a>
           <button
             class="navbar-toggler"
