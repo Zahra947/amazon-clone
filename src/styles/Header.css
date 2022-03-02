@@ -9,6 +9,27 @@
   margin-left: 20px;
   margin-right: 20px;
 }
+.header__nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+.header__link {
+  color: white;
+  text-decoration: none;
+}
+.header__option {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.header__optionLineOne {
+  font-size: 10px;
+}
+.header__optionLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+}
 .header__search {
   display: flex;
   flex: 1;
