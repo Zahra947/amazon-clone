@@ -17,6 +17,30 @@ export default function Header() {
         <input className="header__searchInput" type="search"></input>
         <SearchIcon className="header__searchIcon" />
       </div>
+      <div className="header__nav">
+        <Link to="/" className="header__link">
+          <div className="header__option">
+            <span>Hello Zahra</span>
+            <span>Sign In</span>
+          </div>
+        </Link>
+      </div>
+      <div className="header__nav">
+        <Link to="/" className="header__link">
+          <div className="header__option">
+            <span>Returns</span>
+            <span>& Orders</span>
+          </div>
+        </Link>
+      </div>
+      <div className="header__nav">
+        <Link to="/" className="header__link">
+          <div className="header__option">
+            <span>Your</span>
+            <span>Prime</span>
+          </div>
+        </Link>
+      </div>
     </nav>
   );
 }
