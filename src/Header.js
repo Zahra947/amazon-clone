@@ -7,7 +7,7 @@ import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 export default function Header() {
   return (
     <nav className=" header">
-      <Link to="/Home" href="/">
+      <Link to="/" href="/">
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReAWZgVmr7NL6do8sjOxdWw7mzLVNrUI5BpqW-HKGXCACxX38WJ5RsmxZN5B4114vR3g&usqp=CAU"
           alt="amazon-logo"
