@@ -19,7 +19,7 @@ export default function Header() {
         <SearchIcon className="header__searchIcon" />
       </div>
       <div className="header__nav">
-        <Link to="/" className="header__link">
+        <Link to="/Login" className="header__link">
           <div className="header__option">
             <span className="header__optionLineOne">Hello Zahra</span>
             <span className="header__optionLineTwo">Sign In</span>
@@ -44,7 +44,7 @@ export default function Header() {
         <Link to="/checkout" className="header__link">
           <div className="header__optionBasket">
             <ShoppingBasketIcon />
-            <span>0</span>
+            <span className="header__optionLineTwo header__basketCount">0</span>
           </div>
         </Link>
       </div>
