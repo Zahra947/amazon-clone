@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles/Home.css";
+import Product from "./Product";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
         src="https://wallpaperaccess.com/full/2731342.jpg"
         alt="amazon-prime"
       />
+      <Product />
     </div>
   );
 }
