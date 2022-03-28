@@ -1,11 +1,14 @@
 import { StrictMode } from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
+import { StateProvider } from "./StateProvider";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <StrictMode>
-    <App />
+    <StateProvider>
+      <App />
+    </StateProvider>
   </StrictMode>,
   rootElement
 );
