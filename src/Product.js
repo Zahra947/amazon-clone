@@ -37,7 +37,7 @@ export default function Product(props) {
             ))}
         </div>
       </div>
-      <img src={props.image} alt="a book" />
+      <img src={props.image} alt={props.title} />
       <button onClick={addToBasket}>Add to basket</button>
     </div>
   );
