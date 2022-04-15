@@ -14,7 +14,9 @@ export default function reducer(state, action) {
 
     case "REMOVE_FROM_BASKET":
       //logic for remiving from the basket
+      //clone the baskt
       let newBasket = [...state.basket];
+      //check if the product is in basket
       const index = state.basket.findIndex(
         (basketItem) => basketItem.id === action.id
       );
