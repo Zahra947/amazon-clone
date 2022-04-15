@@ -3,7 +3,7 @@ import { useStateValue } from "./StateProvider";
 import "./styles/checkout.css";
 import CheckoutProduct from "./CheckoutProduct";
 
-export default function Checkout() {
+export default function Checkout(props) {
   const [{ basket }] = useStateValue();
 
   return (
@@ -20,7 +20,13 @@ export default function Checkout() {
         <h1 className="checkout__title">
           Your basket is:
           {basket.map((item) => (
-            <CheckoutProduct />
+            <CheckoutProduct
+              id={props.id}
+              title={props.title}
+              price={props.price}
+              image={props.image}
+              rating={props.rating}
+            />
           ))}
         </h1>
       )}
