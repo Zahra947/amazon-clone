@@ -2,7 +2,7 @@ import React from "react";
 import "./styles/Product.css";
 import { useStateValue } from "./StateProvider";
 
-export default function Product(props) {
+export default function Product({ id, title, price, image, rating }) {
   const [, dispatch] = useStateValue();
 
   const addToBasket = () => {
@@ -10,11 +10,11 @@ export default function Product(props) {
     dispatch({
       type: "ADD_TO_BASKET",
       item: {
-        id: props.id,
-        title: props.title,
-        price: props.price,
-        image: props.image,
-        rating: props.rating
+        id: id,
+        title: title,
+        price: price,
+        image: image,
+        rating: rating
       }
     });
   };
@@ -22,13 +22,13 @@ export default function Product(props) {
   return (
     <div className="product">
       <div className="product__info">
-        <p>{props.title}</p>
+        <p>{title}</p>
         <p className="product__price">
           <small>$</small>
-          <strong>{props.price}</strong>
+          <strong>{price}</strong>
         </p>
         <div className="product__rating">
-          {Array(props.rating)
+          {Array(rating)
             .fill()
             .map((_) => (
               <span role="img" aria-label="star">
@@ -37,7 +37,7 @@ export default function Product(props) {
             ))}
         </div>
       </div>
-      <img src={props.image} alt={props.title} />
+      <img src={image} alt={title} />
       <button onClick={addToBasket}>Add to basket</button>
     </div>
   );

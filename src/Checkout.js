@@ -4,7 +4,7 @@ import "./styles/checkout.css";
 import CheckoutProduct from "./CheckoutProduct";
 import Subtotal from "./Subtotal";
 
-export default function Checkout(props) {
+export default function Checkout({ id, title, price, image, rating }) {
   const [{ basket }] = useStateValue();
 
   return (
@@ -23,11 +23,11 @@ export default function Checkout(props) {
             Your basket is:
             {basket.map((item) => (
               <CheckoutProduct
-                id={props.id}
-                title={props.title}
-                price={props.price}
-                image={props.image}
-                rating={props.rating}
+                id={id}
+                title={title}
+                price={price}
+                image={image}
+                rating={rating}
               />
             ))}
           </h1>
