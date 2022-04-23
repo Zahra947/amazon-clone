@@ -2,7 +2,7 @@ import React from "react";
 import "./styles/checkout.css";
 import { useStateValue } from "./StateProvider";
 
-export function CheckoutProduct({ id, title, price, image, rating }) {
+export default function CheckoutProduct({ id, title, price, image, rating }) {
   const [, dispatch] = useStateValue();
   const removeFromBasket = () => {
     dispatch({
