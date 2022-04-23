@@ -33,17 +33,17 @@ export default function Checkout({ id, title, price, image, rating }) {
           </h1>
         )}
       </div>
-      {basket?.lenght > 0 && (
         <div className="checkout__right">
-          <Subtotal
+          if (basket.lenght > 0) {
+            <Subtotal
             id={id}
             title={title}
             price={price}
             image={image}
             rating={rating}
-          />
+          />  
+          }
         </div>
-      )}
     </div>
   );
 }

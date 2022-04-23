@@ -12,7 +12,7 @@ export default function Subtotal({ id, title, price, image, rating }) {
         renderText={(value) => (
           <>
             <p>
-              Subtotal({basket.lenght} items): <strong>"$"</strong>
+              Subtotal({basket.length} items): <strong>"$"</strong>
             </p>
             <small className="subtotal__goft">
               <input type="checkbox" />
