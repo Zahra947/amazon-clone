@@ -20,7 +20,7 @@ export default function Checkout({ id, title, price, image, rating }) {
           </div>
         ) : (
           <h1 className="checkout__title">
-            Your basket is:
+            Your shopping basket is:
             {basket?.map((item) => (
               <CheckoutProduct
                 id={item.id}

@@ -35,7 +35,7 @@ export default function reducer(state, action) {
         //item exists in basket, remove it
         newBasket.splice(index, 1);
       } else {
-        console.warn(`cant remove product id ${action.id} from the basket`);
+        console.warn(`can't remove product id ${action.id} from the basket`);
       }
 
       return { ...state, newBasket };
