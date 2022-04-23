@@ -29,7 +29,7 @@ export default function reducer(state, action) {
         console.warn(`can't remove product id ${action.id} from the basket`);
       }
 
-      return { ...state, newBasket };
+      return { ...state, basket: newBasket };
 
     default:
       return state;
