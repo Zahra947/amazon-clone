@@ -1,14 +1,5 @@
 export const initialState = {
-  basket: [
-    {
-      id: "123456",
-      title:
-        "Guess Perfume - Guess 1981 - perfumes for women, 100 ml - EDT Spray",
-      price: "50",
-      rating: "5",
-      image: "https://m.media-amazon.com/images/I/61Xv4lrqk8L._AC_SX425_.jpg"
-    }
-  ],
+  basket: [],
   user: null
 };
 export const getBasketTotal = (basket) =>
