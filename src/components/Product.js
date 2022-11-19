@@ -1,6 +1,6 @@
 import React from "react";
-import "./styles/Product.css";
-import { useStateValue } from "./StateProvider";
+import "../styles/Product.css";
+import { useStateValue } from "../StateProvider";
 
 export default function Product({ id, title, price, image, rating }) {
   const [, dispatch] = useStateValue();

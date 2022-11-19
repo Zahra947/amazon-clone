@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./styles/Header.css";
+import "../styles/Header.css";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
-import { useStateValue } from "./StateProvider";
+import { useStateValue } from "../StateProvider";
 
 export default function Header() {
   const [{ basket }] = useStateValue();
